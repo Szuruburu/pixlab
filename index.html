@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Aparthotel</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="node_modules/less/less.js" type="text/javascript"></script>
+		<link rel="stylesheet/less" type="text/css" href="css/style.less">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="home-section-wrapper">
+
+				<div id="cxs-navbar" class="navbar navbar-expand-md d-flex justify-content-between" role="navigation">
+					<div id="cxs-navupper-wrapper" class="d-flex justify-content-between align-items-center">
+						<button id="navbar-toggler" class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+							<img src="img/baseline-menu-24px.svg"><span>Menu</span>
+						</button>
+						<div class="navbar-brand m-0">logo</div>
+						<div id="cxs-edge-caption" class="d-block d-md-none"><span>Rezerwuj</span><img src="img/baseline-bookmark_border-24px.svg"></div>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse justify-content-center navbar-list">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item"><a href="#" class="nav-link active">Strona główna</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Apartamenty</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Lokalizacja</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Atrakcje</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+						</ul>
+					</div>
+					<span id="navbar" class="c-navbar-right navbar-collapse collapse justify-content-end mx-auto" style="max-width: 300px;">
+						<button id="c-reserve" type="button">Zarezerwuj apartament &rarr;</button>
+						<button id="c-lang" type="button"><img src="img/640px-Flag_of_Poland.svg.png"></button>
+					</span>
+				</div>
+
+				<div class="row no-gutters d-flex justify-content-center">
+					<div id="c-hotel-name" class="col-12 d-flex justify-content-center">
+						Aparthotel
+					</div>
+					<div id="c-motto" class="col-12 d-flex justify-content-center">
+						Apartamenty na wynajem<br>w Centrum Gdańska
+					</div>
+				</div>
+
+				<div id="c-advert" class="row no-gutters d-flex justify-content-center">
+					<div class="col-12 d-flex justify-content-center">
+						Zarezerwuj apartament
+					</div>
+					<div class="row no-gutters w-100">
+						<div class="col-md-4 d-flex align-items-center">
+							<span>Data przyjazdu</span><img class="ml-auto" src="img/baseline-calendar_today-24px.svg">
+						</div>
+						<div class="col-md-4 d-flex align-items-center">
+							<span>Data wyjazdu</span><img class="ml-auto" src="img/baseline-calendar_today-24px.svg">
+						</div>
+						<div class="col-md-4 d-flex align-items-center">
+							<span>Sprawdź dostępność</span><img class="ml-auto" src="img/baseline-calendar_today-24px.svg">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="about-section-wrapper">
+				<div class="row no-gutters">
+					<div class="col-md-6">
+						<div class="row no-gutters">
+							<h4>Poznajmy się</h4>
+							<h1>Komfortowe apartamenty stworzone z myślą o Tobie!</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Arcu bibendum at varius vel pharetra. Integer malesuada nunc vel risus commodo. Leo urna molestie at elementum eu facilisis sed odio. Tristique et egestas quis ipsum suspendisse ultrices.</p>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div><span class="circle"><span>4</span></span></div>
+								<div>Komfortowe apartamenty</div>
+							</div>
+							<div class="col-md-4">
+								<div><span class="circle"><span>10</span></span></div>
+								<div>Minut spacerkiem do motławy</div>
+							</div>
+							<div class="col-md-4">
+								<div><span class="circle"><span>5/5</span></span></div>
+								<div>Ocena naszych gości</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="img/apartment-ceiling-chairs-1571460.png">
+						<img src="img/beach-casual-female-556960@2x.png">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$("#navbar-toggler").click(function(){
+					if ($("#navbar").hasClass("show")) {
+						$("#cxs-navbar").removeClass("cxs-navupper-shadow");
+					} else {
+						$("#cxs-navbar").addClass("cxs-navupper-shadow");
+					}
+				});
+			})
+		</script>
+	</body>
+</html>
